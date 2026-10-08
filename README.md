@@ -1,5 +1,7 @@
 # York3D Toyota LC200
 
+[在线体验 / Live demo](https://york3d-lc200.vercel.app/) · [GitHub](https://github.com/York8848/york3d-toyota-lc200) · [MIT License](LICENSE)
+
 中英双语参数化汽车造型研究。React + TypeScript + Vite + Three.js，静态网站，无后端、账户、数据库或运行时 AI API。
 
 **原创简化模型 / Original simplified model**。Toyota Land Cruiser LC200 是外观比例与造型参考。本项目不是 Toyota 官方产品、原厂 CAD、EPC 或官方数字孪生。**原创简化模型 ≠ Toyota 官方汽车零件数据**。
@@ -202,23 +204,23 @@ npm run validate:production
 
 即可重新生成目录与验证报告，并构建完整网站。浏览器从代码重新建立所有几何。截图属于人工浏览器验收记录，不由模型命令伪造。
 
-## 部署到新的 Vercel Project
+## Vercel 生产部署
 
-部署目标为 Vercel，建议项目及公开 GitHub 仓库名称为 `york3d-toyota-lc200`。本项目不需要环境变量或密钥。
+- 正式网站：https://york3d-lc200.vercel.app/
+- 公开仓库：https://github.com/York8848/york3d-toyota-lc200
+- Vercel 项目：York8848 / york3d-toyota-lc200。
+- 当前应用版本：`bbeaaf4`。后续提交仅补充发布说明和验证记录。
+- `vercel.json` 使用 Vite、`npm run build` 和 `dist`。无需环境变量或密钥。
 
-项目已提供 `vercel.json`：framework=vite，buildCommand=`npm run build`，outputDirectory=`dist`。
-
-获得 Vercel 账户和部署权限后，在此项目目录执行：
+已通过官方 CLI 生产发布。Vercel 账户尚未建立 GitHub Login Connection，因此尚未启用 Git 推送自动部署；更新时由项目成员登录 Vercel 后执行：
 
 ```bash
-npx vercel
-# 选择创建新的项目，建议名称 york3d-toyota-lc200；不要链接已有参考项目。
-npx vercel --prod
+npm ci
+npm run validate:production
+npx vercel deploy --prod --yes --scope york8848 --project york3d-toyota-lc200
 ```
 
-或在 Vercel 控制台创建独立项目并上传/连接你自行选择的源码仓库。无需购买服务。
-
-部署后应单独验收：匿名首页可访问、不要求登录、JS/CSS 与 favicon 无 404、WebGL 模型出现、目录及隔离可用、移动布局正常。若项目默认开启 Deployment Protection，需要由项目管理员确认生产访问策略后再发布公开地址。没有部署成功前不要将本地地址称为线上部署地址。
+正式短域名已添加到项目的生产域名，后续生产发布会沿用。默认域名 `york3d-toyota-lc200.vercel.app` 在本次网络中出现 DNS 解析异常，因此使用上面的正式短域名。短域名采用正常 DNS 和 TLS 验证，匿名首页、JS、CSS 与 favicon 均返回 200，资源与本地验收版本逐字节一致。详见 `reports/production-http-validation.json` 和 `reports/QA.md`。
 
 ## 参考与许可证
 

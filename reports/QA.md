@@ -212,3 +212,12 @@
 - 截图：seats-revised-perspective.png、seats-revised-side.png、seats-revised-seven.png、spare-revised-detail.png、spare-revised-installed.png、seats-spare-array.png、seats-spare-final-rear.png。备胎细节截图在最终加长固定杆前保存，轮胎和轮辋形态相同；最终安装截图已更新。
 
 以上为原创简化模型的静态造型验证，座椅和备胎固定结构仍为示意，不代表原厂尺寸、悬架运动间隙或承载验证。
+
+## GitHub 开源与 Vercel 生产发布（2026-10-08）
+
+- GitHub： https://github.com/York8848/york3d-toyota-lc200 ，公开仓库，MIT 许可。已检查待发布源码及文件名，未发现常见凭据模式或个人绝对路径；本机工具、依赖、环境文件和构建目录均被忽略。
+- Vercel 部署 dpl_E7vs9fhKCscPnqL79XsbvrcrzLyM，生产状态 Ready；应用对应提交 bbeaaf4。正式生产地址 https://york3d-lc200.vercel.app/ 。
+- 使用正常 DNS、TLS 和无认证 HTTP 请求验证正式短域名首页及全部入口资源：200，且与本地验收 dist 逐字节一致。默认长域名在本地 DNS 解析异常；使用 Vercel edge 地址并保留 TLS 验证时也确认资源相同。
+- 实际线上浏览器检查：350 件模型成功渲染；备胎目录搜索、选择与单件隔离；100% 阵列、切换英文、复位至中文整车；390×844 画幅下页面 clientWidth/scrollWidth 均为 375，无水平溢出。error/warn 日志为空。
+- 截图：production-preview.png、production-array-en.png、production-mobile.png。
+- 限制：Vercel 账户尚未建立 GitHub Login Connection，Git 自动部署未启用；目前使用官方 CLI 生产部署。真实手机触控与原厂零件精度不在本轮验证范围。

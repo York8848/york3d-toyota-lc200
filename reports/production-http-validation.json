@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-08T09:12:24.607Z",
+  "productionUrl": "https://york3d-lc200.vercel.app",
+  "anonymous": true,
+  "normalDns": true,
+  "assets": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 692,
+      "matchesLocal": true,
+      "sha256": "e7bbdc2a40919e2af468bc1f67ef5e624bf02f97ac0deaf8cee32d192d881b41"
+    },
+    {
+      "path": "/favicon.svg",
+      "status": 200,
+      "bytes": 223,
+      "matchesLocal": true,
+      "sha256": "b1976d7493272bbc5f774c7bd438adb7e69428e17e2929934944044c10312601"
+    },
+    {
+      "path": "/assets/index-CfRpdAGt.js",
+      "status": 200,
+      "bytes": 285340,
+      "matchesLocal": true,
+      "sha256": "2704123e718495c64d126906c5bcc72bd1f827ec93c497724ba4ef47ba57d8e4"
+    },
+    {
+      "path": "/assets/three-OqJe1eFd.js",
+      "status": 200,
+      "bytes": 519262,
+      "matchesLocal": true,
+      "sha256": "a2bb289587451ffd8a38799f3711a92a97c69b6825b6b908ab82bae499f82852"
+    },
+    {
+      "path": "/assets/index-BRfqysHY.css",
+      "status": 200,
+      "bytes": 14040,
+      "matchesLocal": true,
+      "sha256": "4a2807dafd2761ffc7fb72d09eaf8ce703bb90b36012716828806b66afed3d57"
+    }
+  ],
+  "originalAlias": "https://york3d-toyota-lc200.vercel.app",
+  "originalAliasNote": "Local DNS resolution caused TLS failures; its assets were separately verified against a Vercel edge address with normal TLS certificate validation."
+}
