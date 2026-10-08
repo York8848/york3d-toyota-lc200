@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-10-08T08:51:20.362Z",
+  "status": "passed",
+  "files": [
+    {
+      "path": "dist/assets/index-BRfqysHY.css",
+      "bytes": 14040
+    },
+    {
+      "path": "dist/assets/index-CfRpdAGt.js",
+      "bytes": 285340
+    },
+    {
+      "path": "dist/assets/three-OqJe1eFd.js",
+      "bytes": 519262
+    },
+    {
+      "path": "dist/favicon.svg",
+      "bytes": 223
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 692
+    },
+    {
+      "path": "dist/york.svg",
+      "bytes": 298
+    }
+  ],
+  "checks": [
+    "entry asset references exist",
+    "no reference website runtime dependency"
+  ]
+}

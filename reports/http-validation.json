@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "assets": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 692
+    },
+    {
+      "path": "/favicon.svg",
+      "status": 200,
+      "bytes": 223
+    },
+    {
+      "path": "/assets/index-CfRpdAGt.js",
+      "status": 200,
+      "bytes": 285340
+    },
+    {
+      "path": "/assets/three-OqJe1eFd.js",
+      "status": 200,
+      "bytes": 519262
+    },
+    {
+      "path": "/assets/index-BRfqysHY.css",
+      "status": 200,
+      "bytes": 14040
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-10-08T08:51:18.305Z",
+  "meshCount": 350,
+  "catalogCount": 350,
+  "triangles": 499020,
+  "categories": {
+    "body": 77,
+    "glass": 11,
+    "lights": 35,
+    "wheels": 92,
+    "cabin": 77,
+    "structure": 58
+  },
+  "deterministicHash": "c3fc768e4ceb1f726da5d869e2a401bec617550e046123b76a5e40747d149bfc",
+  "checks": [
+    "deterministic geometry + IDs + order",
+    "catalog equals actual mesh traversal",
+    "unique IDs",
+    "hood mirror symmetry and assembled hood/fender seam within 3–7 design mm",
+    "all side-window, front and rear windshield perimeter rays hit fitted body surrounds",
+    "windshield reflected normals agree with outward triangle winding",
+    "44 windshield/frame samples within 1.5 design mm in depth",
+    "continuous fascia around grille and both headlamp apertures",
+    "all-terrain tread stays within wheel-arch radial clearance",
+    "18 actual roof-rail mounting rays span the roof skin and upper rail",
+    "rear exhaust clears both conservative rear tyre envelopes by at least 15 design mm",
+    "seat backrests lean rearward, with seven headrests and 2+3+2 seating",
+    "horizontal full-size spare clears overhead crossmember and exhaust",
+    "finite vertices, normals, transforms, bounds",
+    "nonempty geometry",
+    "no exact duplicate geometry at same location",
+    "all components visible, independently raycastable and fit-able",
+    "one material per component",
+    "0/25/50/75/100 transforms",
+    "0 → 100 → 0 repeated without drift",
+    "default projected array rectangles do not overlap",
+    "camera contains all array bounds"
+  ],
+  "hoodSeamDesignMm": {
+    "min": 5.098982634754908,
+    "max": 5.099052643251142,
+    "samples": 82
+  },
+  "glazingEdgeSamples": 520,
+  "frontFasciaSamples": 220,
+  "roofRailMountSamples": 18,
+  "spareMountSamples": 12,
+  "minSpareMountGapDesignMm": 65.57821835109212,
+  "minSpareExhaustClearanceDesignMm": 225.86785148779092,
+  "minExhaustTireClearanceDesignMm": 34.0932181815948,
+  "windshieldFlushMaxDesignMm": 0.25895049777319157,
+  "tireRadiusDesignMm": 405.00009825123476,
+  "tireArchRadialClearanceDesignMm": 60.99990174876524,
+  "maxResetError": 0,
+  "arrayTests": [
+    {
+      "width": 1048,
+      "height": 686,
+      "overlaps": 0,
+      "cameraDistance": 51.780623871990194
+    },
+    {
+      "width": 1122,
+      "height": 818,
+      "overlaps": 0,
+      "cameraDistance": 51.780623871990194
+    },
+    {
+      "width": 390,
+      "height": 439,
+      "overlaps": 0,
+      "cameraDistance": 52.159329655514846
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "checkedAt": "2026-10-08T08:52:52.320Z",
+  "trackedFiles": 203,
+  "flags": [],
+  "status": "passed",
+  "scope": "Tracked filenames and common secret/private-path patterns; local tools, dependencies, builds and credentials excluded by ignore rules."
+}
