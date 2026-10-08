@@ -209,15 +209,15 @@ npm run validate:production
 - 正式网站：https://york3d-lc200.vercel.app/
 - 公开仓库：https://github.com/York8848/york3d-toyota-lc200
 - Vercel 项目：York8848 / york3d-toyota-lc200。
-- 当前应用版本：`bbeaaf4`。后续提交仅补充发布说明和验证记录。
+- 生产分支：`main`。向该分支推送提交会由 Vercel Git 集成自动构建并更新正式网站。
 - `vercel.json` 使用 Vite、`npm run build` 和 `dist`。无需环境变量或密钥。
 
-已通过官方 CLI 生产发布。Vercel 账户尚未建立 GitHub Login Connection，因此尚未启用 Git 推送自动部署；更新时由项目成员登录 Vercel 后执行：
+已连接 GitHub 仓库 `York8848/york3d-toyota-lc200`，启用 Vercel 自动部署。GitHub App 安装范围限定为本仓库。日常更新先运行本地验证，再提交并推送至 `main`：
 
 ```bash
 npm ci
 npm run validate:production
-npx vercel deploy --prod --yes --scope york8848 --project york3d-toyota-lc200
+git push origin main
 ```
 
 正式短域名已添加到项目的生产域名，后续生产发布会沿用。默认域名 `york3d-toyota-lc200.vercel.app` 在本次网络中出现 DNS 解析异常，因此使用上面的正式短域名。短域名采用正常 DNS 和 TLS 验证，匿名首页、JS、CSS 与 favicon 均返回 200，资源与本地验收版本逐字节一致。详见 `reports/production-http-validation.json` 和 `reports/QA.md`。
